@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    background-color: rgb(188, 203, 209);
+}
+.card{
+    margin-left: 20px;
+    background-color: white;
+    width: 300px;
+}
+.card h1, .card h2, .card p{
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+.card h1{
+    padding-top: 20px;
+    color: grey;
+    font-size: 20px;
+}
+.card h2{
+    font-size: 30px;
+}
+.card p{
+    color: grey;
+}
+.card img{
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 135px;
+    left: 240px;
+    background-color: rgb(114, 145, 247);
+}
