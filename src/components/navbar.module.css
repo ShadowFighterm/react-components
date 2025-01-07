@@ -1,0 +1,179 @@
+
+.navbarContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    z-index: 2;
+}
+.brandLogo{
+    height: 60px;
+    width: auto;
+}
+.navLinks{
+    display: flex;
+    list-style: none;
+    
+}
+
+.navLinks a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    gap: 15px;
+}
+.globeUserIcon{
+    font-size: 30px;
+}
+.globeGlobeIcon{
+    padding: 5px;
+    font-size: 28px;
+}
+.globeUserIcon, .globeBarsIcon{
+    color: grey;
+}
+
+.navLinks li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 400px;
+    text-align: center;
+}
+.navLinks li:hover{
+    background-color: rgb(236, 236, 236);
+    color: black;
+}
+.userMenu {
+    position: absolute;
+    top: 80px; /* Adjust based on your navbar height */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 250px; /* Adjust width */
+    padding: 10px 0; /* Padding inside the dropdown */
+}
+
+.userMenu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.userMenu ul li {
+    padding: 12px 20px; /* Spacing for items */
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Text color */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 0px;
+}
+
+.userMenu ul li a {
+    text-decoration: none;
+    color: inherit; /* Inherit text color */
+    display: flex;
+    width: 100%;
+
+    
+}
+
+.userMenu ul li:hover {
+    background-color: #f7f7f7; /* Light gray background on hover */
+}
+
+.logSign{
+    border-bottom: 1px solid rgb(219, 213, 213);
+    margin-bottom: 12px;
+}
+
+.logSign ul{
+   margin-bottom: 12px;
+}
+
+a, li{
+    cursor: pointer;
+    text-align: center;
+}
+.loginBtn{
+    background-color: #fff;
+    border: 1px solid;
+    border-color: rgb(206, 200, 200);
+    color: grey;
+    margin-left: 10px;
+    transition: box-shadow 0.3s ease; /* Add smooth transition */
+}
+.loginBtn:hover{
+    background-color: white !important;
+    color: grey !important;
+    box-shadow: 1px 3px 5px 0px rgb(221, 213, 213);
+    cursor: pointer;
+}
+#navCenter{
+    margin-left: 150px;
+    
+}
+.mobileBar{
+    display: none;
+}
+.mobileBar button{
+    background-color: inherit;
+    border: none;
+    color: grey;
+    font-size: 10px;
+}
+.iconStyle, .mobileSelected {
+    color: grey;
+    font-size: 25px;
+}
+.mobileBar div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.mobileSelected button, .mobileSelected .iconStyle{
+    color: red;
+}
+
+
+@media (max-width: 950px)
+{
+    .navbarContainer{
+        position: static;
+    }
+}
+
+@media (max-width: 750px)
+{
+    .navbarContainer div{
+        display: none;
+    }
+    .navbarContainer{
+        position: fixed;
+        bottom: 0;
+        height: auto;
+        width: 100%;
+        background-color: white;
+    }
+    .mobileBar{
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        width: 100%;
+    }
+    .mobileBar div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
